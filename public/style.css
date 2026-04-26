@@ -1,0 +1,162 @@
+:root {
+  --bg: #f7faf9;
+  --card: #ffffff;
+  --text: #1f2933;
+  --muted: #64748b;
+  --primary: #0f766e;
+  --primary-dark: #115e59;
+  --border: #e5e7eb;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.7;
+}
+
+.hero {
+  background: linear-gradient(135deg, #0f766e, #14b8a6);
+  color: white;
+  padding: 64px 20px 76px;
+  text-align: center;
+}
+
+.hero-content {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.eyebrow {
+  margin: 0 0 8px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-size: 13px;
+  opacity: 0.9;
+}
+
+h1 {
+  margin: 0;
+  font-size: clamp(32px, 5vw, 52px);
+  line-height: 1.1;
+}
+
+.subtitle {
+  max-width: 720px;
+  margin: 18px auto 0;
+  font-size: 18px;
+  opacity: 0.95;
+}
+
+.container {
+  max-width: 980px;
+  margin: -42px auto 64px;
+  padding: 0 20px;
+}
+
+.card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 22px;
+  box-shadow: 0 16px 44px rgba(15, 118, 110, 0.11);
+  padding: clamp(24px, 4vw, 42px);
+}
+
+.top-row {
+  display: flex;
+  gap: 18px;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding-bottom: 26px;
+  border-bottom: 1px solid var(--border);
+  margin-bottom: 4px;
+}
+
+.document-title {
+  margin: 0 0 6px;
+  color: var(--primary-dark);
+  font-size: 26px;
+}
+
+.updated {
+  margin: 0;
+  color: var(--muted);
+  font-size: 14px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: var(--primary-dark);
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  padding: 8px 14px;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.nav-links a:hover {
+  background: #ecfdf5;
+}
+
+.policy-section {
+  padding: 24px 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.policy-section:last-child {
+  border-bottom: 0;
+  padding-bottom: 0;
+}
+
+.policy-section h2 {
+  margin: 0 0 10px;
+  color: var(--primary);
+  font-size: 22px;
+}
+
+.policy-section p {
+  margin: 0;
+  white-space: pre-line;
+}
+
+.footer {
+  text-align: center;
+  color: var(--muted);
+  font-size: 14px;
+  padding: 28px 20px;
+}
+
+.error-card {
+  margin-top: 120px;
+}
+
+a {
+  color: var(--primary);
+}
+
+@media (max-width: 720px) {
+  .top-row {
+    flex-direction: column;
+  }
+
+  .nav-links {
+    width: 100%;
+  }
+
+  .nav-links a {
+    flex: 1;
+    text-align: center;
+  }
+}
